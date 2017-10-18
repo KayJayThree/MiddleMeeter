@@ -8,17 +8,13 @@ namespace MiddleMeeter
 {
     class ResultsPage : ContentPage
     {
-        public ResultsPage()
+        public ResultsPage(string results)
         {
+            Title = "Results";
             Content = new StackLayout
             {
-                Children =
-                {
-                    new Label
-                    {
-                        Text = "ResultsPage"
-                    },
-
+                Children = { 
+                    new Label  { Text = "ResultsPage" + results },
                 }
             };
         }
